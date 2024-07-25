@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    container_name: django-docker-example
+    ports:
+      - 8080:80
+    volumes:
+      - .:/code
